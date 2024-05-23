@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotePaid</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+
+    <select class="transform" id="transform"> 
+        <option value="" >Text Style</option>
+        <option  value="monospace" id="monospace">MonoSpace</option>
+        <option  value="serif" id="serif"> Serif</option>
+        <option  value="sans-serif" id="sana-serif">Sana-Serif</option>
+    </select>
+
+    <select name="" id="font_size" class="heading">
+        <option value="" >Font-Size</option>
+        <option value="heading" >Heading</option>
+        <option value="SubHeading">SubHeading</option>
+        <option value="Normal">Normal</option>
+    </select>
+
+
+    <div class="buttons">
+
+        <button class="btn" onclick="bold(this)"><img src="./bold-regular-24.png" alt=""></button>
+        <button class="btn" onclick="italic(this)"><img src="./italic-regular-24.png" alt=""></button>
+        <button class="btn" onclick="underline(this)"><img src="./underline-regular-24.png" alt=""></button>
+        <button class="btn" onclick="align_right(this)"><img src="./align-right-regular-24.png" alt=""></button>
+        <button class="btn" onclick="align_left(this)"><img src="./align-left-regular-24.png" alt=""></button>
+        <button class="btn" onclick="align_justify(this)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 7h16v2H4zm0-4h16v2H4zm0 8h16v2H4zm0 4h16v2H4zm2 4h12v2H6z"/></svg>
+
+        </button>
+
+    </div>
+
+    </div>
+
+    <div class="text-area">
+        <textarea name="" id="text" placeholder="Type Your Text here"></textarea>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
